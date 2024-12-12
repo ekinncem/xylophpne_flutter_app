@@ -23,7 +23,7 @@ class XylophoneApp extends StatelessWidget {
                     final player = AudioPlayer();
                     await player.play(AssetSource('sounds/note1.wav'));
                   },
-                  child: const Text('Note 1'),
+                  child: const Text('Note 1', style: TextStyle(fontSize: 23),),
                 ),
                 ElevatedButton(
                   onPressed: () async {
