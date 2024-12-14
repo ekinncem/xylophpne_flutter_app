@@ -37,7 +37,35 @@ class XylophoneApp extends StatelessWidget {
                     final player = AudioPlayer();
                     await player.play(AssetSource('sounds/note3.wav'));
                   },
-                  child: const Text('Note 3'),
+                  child: const Text('Note 3', style: TextStyle(fontSize: 23),),
+                ),
+                ElevatedButton(
+                  onPressed: () async {
+                    final player = AudioPlayer();
+                    await player.play(AssetSource('sounds/note4.wav'));
+                  },
+                  child: const Text('Note 4', style: TextStyle(fontSize: 23),),
+                ),
+                ElevatedButton(
+                  onPressed: () async {
+                    final player = AudioPlayer();
+                    await player.play(AssetSource('sounds/note5.wav'));
+                  },
+                  child: const Text('Note 5', style: TextStyle(fontSize: 23),),
+                ),
+                ElevatedButton(
+                  onPressed: () async {
+                    final player = AudioPlayer();
+                    await player.play(AssetSource('sounds/note6.wav'));
+                  },
+                  child: const Text('Note 6', style: TextStyle(fontSize: 23),),
+                ),
+                ElevatedButton(
+                  onPressed: () async {
+                    final player = AudioPlayer();
+                    await player.play(AssetSource('sounds/note7.wav'));
+                  },
+                  child: const Text('Note 7', style: TextStyle(fontSize: 23),),
                 ),
               ],
             ),

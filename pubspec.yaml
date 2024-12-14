@@ -68,6 +68,8 @@ flutter:
    - assets/sounds/note3.wav
    - assets/sounds/note4.wav
    - assets/sounds/note5.wav
+   - assets/sounds/note6.wav
+   - assets/sounds/note7.wav
  
 
   # An image asset can refer to one or more resolution-specific "variants", see
