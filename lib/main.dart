@@ -9,66 +9,91 @@ void main() {
 class XylophoneApp extends StatelessWidget {
   const XylophoneApp({super.key});
 
+  void playSound(int soundNumber,){
+    final player = AudioPlayer();
+    player.play(AssetSource('sounds/note$soundNumber.wav'));
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                  onPressed: () async {
-                    final player = AudioPlayer();
-                    await player.play(AssetSource('sounds/note1.wav'));
-                  },
-                  child: const Text('Note 1', style: TextStyle(fontSize: 23),),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                onPressed: () async {
+                  playSound(1);
+                },
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.red, // Arka plan rengi kırmızı
+                  foregroundColor: Colors.white, // Yazı rengi beyaz (kontrast için)
                 ),
-                ElevatedButton(
-                  onPressed: () async {
-                    final player = AudioPlayer();
-                    await player.play(AssetSource('sounds/note2.wav'));
-                  },
-                  child: const Text('Note 2', style: TextStyle(fontSize: 23),),
+                child: Text('Click Me'),
+              ),
+              TextButton(
+                onPressed: () async {
+                  playSound(2);
+                },
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.orange, // Arka plan rengi kırmızı
+                  foregroundColor: Colors.white, // Yazı rengi beyaz (kontrast için)
                 ),
-                ElevatedButton(
-                  onPressed: () async {
-                    final player = AudioPlayer();
-                    await player.play(AssetSource('sounds/note3.wav'));
-                  },
-                  child: const Text('Note 3', style: TextStyle(fontSize: 23),),
+                child: Text('Click Me'),
+              ),
+              TextButton(
+                onPressed: () async {
+                  playSound(3);
+                },
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.yellow, // Arka plan rengi kırmızı
+                  foregroundColor: Colors.white, // Yazı rengi beyaz (kontrast için)
                 ),
-                ElevatedButton(
-                  onPressed: () async {
-                    final player = AudioPlayer();
-                    await player.play(AssetSource('sounds/note4.wav'));
-                  },
-                  child: const Text('Note 4', style: TextStyle(fontSize: 23),),
+                child: Text('Click Me'),
+              ),
+              TextButton(
+                onPressed: () async {
+                  playSound(4);
+                },
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.green, // Arka plan rengi kırmızı
+                  foregroundColor: Colors.white, // Yazı rengi beyaz (kontrast için)
                 ),
-                ElevatedButton(
-                  onPressed: () async {
-                    final player = AudioPlayer();
-                    await player.play(AssetSource('sounds/note5.wav'));
-                  },
-                  child: const Text('Note 5', style: TextStyle(fontSize: 23),),
+                child: Text('Click Me'),
+              ),
+              TextButton(
+                onPressed: () async {
+                  playSound(5);
+                },
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.lightBlue, // Arka plan rengi kırmızı
+                  foregroundColor: Colors.white, // Yazı rengi beyaz (kontrast için)
                 ),
-                ElevatedButton(
-                  onPressed: () async {
-                    final player = AudioPlayer();
-                    await player.play(AssetSource('sounds/note6.wav'));
-                  },
-                  child: const Text('Note 6', style: TextStyle(fontSize: 23),),
+                child: Text('Click Me'),
+              ),
+              TextButton(
+                onPressed: () async {
+                  playSound(6);
+                },
+                style: TextButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 7, 59, 102), // Arka plan rengi kırmızı
+                  foregroundColor: Colors.white, // Yazı rengi beyaz (kontrast için)
                 ),
-                ElevatedButton(
-                  onPressed: () async {
-                    final player = AudioPlayer();
-                    await player.play(AssetSource('sounds/note7.wav'));
-                  },
-                  child: const Text('Note 7', style: TextStyle(fontSize: 23),),
+                child: Text('Click Me'),
+              ),
+              TextButton(
+                onPressed: () async {
+                  playSound(7);
+                },
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.deepPurple, // Arka plan rengi kırmızı
+                  foregroundColor: Colors.white, // Yazı rengi beyaz (kontrast için)
                 ),
-              ],
-            ),
+                child: Text('Click Me'),
+              ),
+            ],
           ),
         ),
       ),
