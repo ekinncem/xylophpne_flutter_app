@@ -26,7 +26,7 @@ class XylophoneApp extends StatelessWidget {
           backgroundColor: color,
           foregroundColor: Colors.white,
         ),
-        child: Text(text, style: const TextStyle(fontSize: 23)),
+        child: Text(text, style: const TextStyle(fontSize: 24)),
       ),
     );
   }
